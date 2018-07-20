@@ -1,0 +1,330 @@
+/*-----------------------------------------------------------------------------------*/
+/*	GENERAL
+/*-----------------------------------------------------------------------------------*/
+
+html, body {
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+body {
+	background: url(img/tomat_background.jpg);
+	background-size: cover;
+	font-family: Verdana, sans-serif;
+	background-attachment: fixed;
+	font-size: 14px;
+	color: #585858;
+}
+
+p {
+	line-height: 2;
+	margin-bottom: 20px;
+}
+
+p img{
+	vertical-align: middle;
+	padding-right: 10px;
+	display: inline;
+}
+
+a {
+	color: #688dad;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ab4d63;
+}
+
+
+h1, h2, h3 {
+	font-weight: normal;
+	margin: 0 0 10px 0;
+}
+h1 {
+	font-size: 22px;
+	line-height: 2,5;
+	color: #076ed7;
+}
+
+h2 {
+	font-size: 20px;
+	line-height: 2;
+}
+
+h3 {
+	font-size: 12px;
+	line-height: 1,5;
+	font-weight: bold;
+}
+
+img {
+	display: block;
+}
+
+
+h3 img {
+	vertical-align: middle;
+	padding-right: 10px;
+	display: inline;
+}
+
+blockquote{
+	font-style: italic;
+}
+
+.movie {
+	text-align: center;
+	font-size: 14px;
+	line-height: 1;
+	font-weight: bold;
+}
+
+.title {
+	color: #076ed7;
+	font-weight: bold;
+	font-variant: small-caps;
+	text-align: center;
+}
+
+.line {
+	background: transparent url(style/images/line.png) repeat-x;
+	height: 2px;
+	padding: 20px 0 0 0;
+}
+
+ul {
+	line-height: 1,5;
+	margin-bottom: 20px;
+}
+
+ul li {
+	padding-left: 10px;
+}
+
+
+#wrapper {
+	width: 70em;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#content {
+	background-color: #dee4e7;
+	width: 50em;
+	padding: 20px 10px 10px 10px;
+	float: right;
+	position: relative;
+}
+
+#content ul li{
+	list-style-type: disc;
+	margin-left: 20px;
+}
+#sidebar {
+	width: 17,6em;
+	background-color: #dee4e7;
+	float: left;
+	position: fixed;
+	margin-top: -1px;
+	z-index: 100;
+	min-height:100%;
+	
+}
+
+
+#logo {
+	text-align: left;
+	padding: 40px 32px 0 32px;
+}
+
+#logo a {
+	border: none;
+}
+
+#logo img {
+	display: inline;
+}
+
+#sidebar ul {
+	line-height: 1;
+	text-align: left;
+	background: none;
+	padding: 0;
+	display: inline-block;
+	padding-right: 3px;
+}
+
+#footer {
+	font-size: 12px;
+	background: #9cb0b8;
+	overflow: hidden;
+	margin-top: 1em;
+	padding: 1em;
+	height: 16,4em;
+	text-align: justify; /*Textausrichtung innerhalb den Spalten*/
+	column-count: 2;
+	-webkit-column-count: 2; /* für Chrome, Safari, Opera */
+	-moz-column-count: 2; /* für Firefox */
+	column-gap: 2em;
+}
+.footer-box {
+	width: 15,5em;
+	height: 100%;
+	padding-top: 3%;
+	clear: both;
+	overflow: hidden;
+	margin-top: 0,95em;
+	background: none;
+	padding: 0,95em 0 0 0;
+	line-height: 1;
+	background: transparent;
+	margin: 0;
+	padding: 0;
+	background: none;
+}
+.footer-box a img {
+	display: inline;
+	float: left;
+	padding-right: 0,625em;
+}
+.footer-box span {
+	display: inline-block;
+	font-size: 11px;
+	font-style: italic;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	MENU
+/*-----------------------------------------------------------------------------------*/
+#menu {
+	float: left;
+	text-align: left;
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+/*menu aussen*/
+.side {
+	width: 200px;
+	margin: 20px;
+}
+.menu a {
+	background: #9cb0b8;
+	color: #fff;
+	padding: 10px;
+	display: block;
+	border-bottom: 1px solid #666;
+	transition: 0,5s all;
+}
+.menu a:hover {
+	background: #666;
+	padding: 10px 0 10px 20px;
+}
+/*drop menu*/
+
+.menu_list {
+	position: relative;
+}
+.menu_drop {
+	position: absolute;
+	width: 130%;
+	left: 100%;
+	opacity: 0;
+	top: -9999em;
+	transition: 0,5s opacity;
+	border-left: 1px solid transparent;
+}
+.menu_list:hover .menu_drop{
+	opacity: 1;
+	top: 0;
+}
+
+* html .side ul li { float: left; height: 1%; }
+* html .side ul li a { height: 1%; }
+
+/*-----------------------------------------------------------------------------------*/
+/*	FORM
+/*-----------------------------------------------------------------------------------*/
+
+table{
+width: 400px;
+height: 300px;
+border-collapse: collapse;
+border: none;
+line-height: 1,5;
+}
+td{
+	text-align: left;
+	padding: 15px;
+}
+.rot {background-color:red;}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #6ecce3;
+}
+
+.button1:hover {
+    background-color: #6ecce3;
+    color: white;
+}
+
+
+.ftext:focus{
+outline: none;
+box-shadow: 0px 0px 5px #CB2326;
+border:1px solid #5AB0DB;
+}
+
+.ftext:hover{
+border: 1px solid #EFD808;
+border-radius: 0px;
+}
+
+.ftext:focus:hover{
+outline: none;
+box-shadow: 0px 0px 5px #CB2326;
+border:1px solid #EFD808;
+border-radius:0;
+
+}    
+#fehler
+{
+background-color: red;
+width: 784px;
+color: white;
+margin: 14pt;
+}
+
+#erfolg
+{
+background-color: green;
+width: 784px;
+color: white;
+margin: 14pt;	
+}
